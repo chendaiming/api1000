@@ -1,21 +1,4 @@
-@font-face {
-  font-family: "Source Sans Pro";
-  src: local("Source Sans Pro"), url("/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
-}
-@font-face {
-  font-family: "Source Sans Pro";
-  src: local("Source Sans Pro Light"), url("/fonts/Source_Sans_Pro/SourceSansPro-Light.ttf");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Source Sans Pro";
-  src: local("Source Sans Pro Semibold"), url("/fonts/Source_Sans_Pro/SourceSansPro-Semibold.ttf");
-  font-weight: 600;
-}
-@font-face {
-  font-family: "Roboto Mono";
-  src: local("Roboto Mono"), url("/fonts/Roboto_Mono/RobotoMono-Regular.ttf");
-}
+
 .gutter pre {
   color: #999;
 }
@@ -342,7 +325,6 @@ a.button.white {
 }
 #header {
   background-color: #fff;
-  height: $heading-inner-height;
   padding: 10px 60px;
   position: relative;
   z-index: 2;
@@ -391,7 +373,6 @@ body.docs #nav {
   border-radius: 15px;
   margin-right: 10px;
   transition: border-color 0.2s ease;
-  background: #fff url("/images/search.png") 8px 5px no-repeat;
   background-size: 20px;
   vertical-align: middle !important;
 }
@@ -429,14 +410,12 @@ body.docs #nav {
   height: 24px;
   top: 8px;
   left: 12px;
-  background: url("../images/menu.png") center center no-repeat;
   background-size: 24px;
 }
 #mobile-bar .logo {
   position: absolute;
   width: 30px;
   height: 30px;
-  background: url("../images/logo.png") center center no-repeat;
   top: 5px;
   left: 50%;
   margin-left: -15px;
@@ -784,7 +763,7 @@ ul.demo li {
   margin: 1em 0;
 }
 .content > table {
-  border: 2px solid $white;
+  border: 2px solid white;
   margin: 1.2em auto;
   padding: 1em;
 }
