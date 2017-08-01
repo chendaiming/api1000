@@ -179,7 +179,8 @@ body.body-small .navbar-top-links li:last-child {
 
 .nav-header {
     padding: 33px 25px;
-    background: url(patterns/header-profile.png) no-repeat
+    background: url(patterns/header-profile.png) no-repeat;
+    background-size: auto 100%;
 }
 
 .nav > li.active {
