@@ -18,13 +18,14 @@
     <![endif]-->
 
     <link rel="shortcut icon" href="favicon.ico">
-    <link href="css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
-    <link href="css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/style.min862f.css?v=4.1.0" rel="stylesheet">
+    <link href="css/common.css?v=4.1.0" rel="stylesheet">
 </head>
 
 <body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
+    <a id="J_menuItem_a" class="J_menuItem hide" href="#"></a>
     <div id="wrapper">
         <!--左侧导航开始-->
         <nav class="navbar-default navbar-static-side" role="navigation">
@@ -54,21 +55,60 @@
                     <li class="active">
                         <a href="#">
                             <i class="fa fa-home"></i>
-                            <span class="nav-label">Vue API</span>
+                            <span class="nav-label">Web前端</span>
                             <span class="fa arrow"></span>
                         </a>
-                        <ul class="nav nav-second-level in">
+                        <ul class="nav nav-second-level">
                             <li>
-                                <a class="J_menuItem" href="vueapi/Vue.js.html" data-index="0">API</a>
+                                <a class="J_menuItem" href="http://jquery.cuishifeng.cn/" data-index="0">Jquery API</a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="vueapi/Vue_jiesao.html">教程</a>
+                                <a class="J_menuItem" href="http://css.cuishifeng.cn/">CSS 速查表</a>
                             </li>
-
+                            <li>
+                                <a class="J_menuItem" href="https://threejs.org/examples/#webgl_animation_cloth">Threejs</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="http://reactnative.cn/docs/0.46/getting-started.html">React Native</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="http://www.w3school.com.cn/js/index.asp">JavaScript</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="http://www.fontawesome.com.cn/faicons/">Font Awesome</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="https://daneden.github.io/animate.css/">animate.css</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="http://www.angularjsapi.cn/">angularjs</a>
+                            </li>
+                            <li>
+                                <a href="#">Vue <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li><a class="J_menuItem" href="https://cn.vuejs.org/v2/guide/">官网API</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="vueapi/Vue.js.html">API</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="vueapi/Vue_jiesao.html">教程</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Bootstrap <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li><a class="J_menuItem" href="http://v3.bootcss.com/css/#code">全局CSS样式</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="http://v3.bootcss.com/components/">组件</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="http://v3.bootcss.com/javascript/#dropdowns">JavaScript插件</a>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
 
                     </li>
-                    <li>
+                    <!--<li>
                         <a href="#">
                             <i class="fa fa-home"></i>
                             <span class="nav-label">主页</span>
@@ -379,7 +419,7 @@
                             <li><a class="J_menuItem" href="form_builder.html">表单构建器</a>
                             </li>
                         </ul>
-                    </li>
+                    </li>-->
 
                 </ul>
             </div>
@@ -488,7 +528,7 @@
                 </button>
                 <nav class="page-tabs J_menuTabs">
                     <div class="page-tabs-content">
-                        <a href="javascript:;" class="active J_menuTab" data-id="index_v1.html">首页</a>
+                        <a href="javascript:;" class="active J_menuTab" data-id="platform/home.html">首页</a>
                     </div>
                 </nav>
                 <button class="roll-nav roll-right J_tabRight"><i class="fa fa-forward"></i>
@@ -509,10 +549,10 @@
                 </div>
             </div>
             <div class="row J_mainContent" id="content-main">
-                <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="vueapi/Vue.js.html" frameborder="0" data-id="index_v1.html" seamless></iframe>
+                <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="platform/home.html" frameborder="0" data-id="platform/home.html" seamless></iframe>
             </div>
             <div class="footer">
-                <div class="pull-right">&copy; 2017-2019
+                <div class="pull-right">&copy; 程序猿的API共享网站
                 </div>
             </div>
         </div>
@@ -938,6 +978,12 @@
         $(".content-tabs").click(function(){
             $(".fixed-sidebar").addClass('mini-navbar');
         })
+
+        function showTables(url,name){
+            $("#J_menuItem_a").html(name);
+            $("#J_menuItem_a").attr('href',url);
+            $("#J_menuItem_a").click();
+        }
     </script>
 </body>
 

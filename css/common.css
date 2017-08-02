@@ -6917,3 +6917,12 @@ body.skin-3 {
         font-size: 12px
     }
 }
+
+.home-div a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-div a div{
+   width: 100px;
+}
